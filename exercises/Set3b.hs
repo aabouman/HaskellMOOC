@@ -205,5 +205,3 @@ maybeMap :: (a -> Maybe b) -> [a] -> [b]
 maybeMap f xs = case xs of []     -> []
                            (x:xs) -> case f x of Nothing -> maybeMap f xs
                                                  Just a -> a:(maybeMap f xs)
-
-
